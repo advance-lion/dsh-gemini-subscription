@@ -1,0 +1,3 @@
+- insert:
+    - id: gemini-subscription
+      name: dsh-gemini-subscription

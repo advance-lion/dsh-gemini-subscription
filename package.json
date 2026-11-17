@@ -1,0 +1,19 @@
+{
+  "name": "dsh-gemini-subscription",
+  "version": "0.1.1",
+  "description": "Google AI subscription provider for DeepSeek Harness through the official Antigravity CLI",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js", "./cordis.patch.yml": "./cordis.patch.yml" },
+  "bin": { "dsh-gemini": "./src/cli.js" },
+  "files": ["src", "scripts", "*.ps1", "bridge-package.json", "cordis.patch.yml", "README.md", "CHANGELOG.md", "LICENSE", "THIRD_PARTY_NOTICES.md"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "engines": { "node": ">=24.9", "dsh": ">=0.2.2-rc.3 <0.3" },
+  "peerDependencies": { "@deepseek-ai/dsh-llm": ">=0.2.2-rc.3 <0.3" },
+  "scripts": { "test": "node --test test/bridge.test.js test/openai.test.js", "test:integration": "node --test test/dsh.test.js", "setup": "node scripts/install.mjs" },
+  "repository": { "type": "git", "url": "git+https://github.com/advance-lion/dsh-gemini-subscription.git" },
+  "homepage": "https://github.com/advance-lion/dsh-gemini-subscription#readme",
+  "bugs": { "url": "https://github.com/advance-lion/dsh-gemini-subscription/issues" },
+  "keywords": ["dsh-plugin", "gemini", "google-ai-pro"],
+  "license": "MIT"
+}

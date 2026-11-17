@@ -1,0 +1,16 @@
+node_modules/
+.runtime/
+.research/
+.bridge/
+upstream*/
+upstream.zip
+asar-header.json
+gemini-*.ts
+providers-upstream.md
+*.tgz
+dist/
+*.log
+.env*
+*.pem
+*.key
+oauth*.json
